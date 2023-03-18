@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <tuple>
 
-using namespace std;
 
 class Tier {
 public:
@@ -22,21 +21,21 @@ public:
 };
 
 int main() {
-    string name = "Felix";
-    int i;
-    string hullo = "hullo \n";
+    char name[6] = "Felix";
+    char i;
+    char hullo[6] = "hullo";
 
-    cout << "Hallo" + name + "\n";
-    cin >> i;
-    cout << "du hast " + to_string(i) + " eingegeben \n";
+    std::cout << "Hallo " << name << std::endl;
+    std::cin >> i;
+    std::cout << "du hast " << i << " eingegeben" << std::endl;
 
-    cout << hullo;
+    std::cout << hullo << std::endl;
 
     Tier felix;
     felix.postion_x = 1;
     felix.postion_y = 1;
     felix.laufen(3, 8);
-    cout << felix.position();
+    std::cout << felix.position();
 
     char* cmd = (char*) malloc(60);
 

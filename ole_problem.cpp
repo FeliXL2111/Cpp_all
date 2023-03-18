@@ -3,8 +3,6 @@
 #include <vector>
 
 
-using namespace std;
-
 void sort(int lis[], int n){
     for (int i = 0; i < n - 1; i++){
         for (int j = 0; j < n - i - 1; j++)
@@ -17,8 +15,8 @@ void printArray(int arr[], int size)
 {
     int i;
     for (i = 0; i < size; i++)
-        cout << arr[i] << " ";
-    cout << endl;
+        std::cout << arr[i] << " ";
+    std::cout << std::endl;
 }
 
 
@@ -36,5 +34,5 @@ int main(){
     printArray(listee, n);
     add(lis);
     int m = sizeof(lis)/sizeof(lis[0]);
-    cout << lis[3] << endl;
+    std::cout << lis[3] << std::endl;
 }
