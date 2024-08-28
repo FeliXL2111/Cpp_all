@@ -40,7 +40,7 @@ class vec3 {
 };
 
 // point3 is just an alias for vec3, but useful for geomatric clarity in the code
-using paint3 = vec3;
+using point3 = vec3;
 
 
 // vecor utility funtions
